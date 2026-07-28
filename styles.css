@@ -67,7 +67,7 @@ a {
 
 
 /* =========================
-   TS LOGO (FIXED)
+   TS LOGO
 ========================= */
 
 .logo {
@@ -82,19 +82,29 @@ a {
 
     line-height:1;
 
-    padding:6px;
+    color:#FFFFFF;
 
+    display:flex;
 
-    background:linear-gradient(
-        135deg,
-        var(--purple-light),
-        var(--blue)
-    );
+    align-items:center;
 
+    justify-content:center;
 
-    -webkit-background-clip:text;
+    width:48px;
 
-    -webkit-text-fill-color:transparent;
+    height:48px;
+
+    border-radius:10px;
+
+    background:#050407;
+
+    border:1px solid #241833;
+
+    box-shadow:
+        inset 0 0 12px rgba(91,58,130,.12),
+        0 0 8px rgba(0,0,0,.4);
+
+    transition:none;
 
 }
 
