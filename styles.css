@@ -270,17 +270,28 @@ section h2 {
    SOCIAL LINKS
 ========================= */
 
+.social-links {
+
+    margin-top:25px;
+
+    display:flex;
+
+    gap:14px;
+
+}
+
+
 .social-links a {
 
-    display:inline-flex;
-
-    width:42px;
-
-    height:42px;
+    display:flex;
 
     align-items:center;
 
     justify-content:center;
+
+    width:48px;
+
+    height:48px;
 
     border-radius:10px;
 
@@ -295,15 +306,27 @@ section h2 {
 }
 
 
-.social-links svg {
+.social-links svg,
+.social-links img {
 
-    width:22px;
+    width:26px !important;
 
-    height:22px;
+    height:26px !important;
+
+    display:block;
 
 }
 
 
+.social-links a:hover {
+
+    color:#5B3A82;
+
+    border-color:#5B3A82;
+
+    transform:translateY(-2px);
+
+}
 
 
 /* =========================
