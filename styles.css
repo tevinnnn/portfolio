@@ -270,30 +270,19 @@ section h2 {
    SOCIAL LINKS
 ========================= */
 
-.social-links {
-
-    margin-top:25px;
-
-    display:flex;
-
-    gap:12px;
-
-}
-
-
 .social-links a {
 
     display:inline-flex;
 
-    width:32px;
+    width:42px;
 
-    height:32px;
+    height:42px;
 
     align-items:center;
 
     justify-content:center;
 
-    border-radius:7px;
+    border-radius:10px;
 
     background:#08070B;
 
@@ -308,25 +297,11 @@ section h2 {
 
 .social-links svg {
 
-    width:16px;
+    width:22px;
 
-    height:16px;
-
-}
-
-
-.social-links a:hover {
-
-    color:#5B3A82;
-
-    border-color:#5B3A82;
-
-    transform:translateY(-2px);
-
-    box-shadow:0 0 12px rgba(91,58,130,.25);
+    height:22px;
 
 }
-
 
 
 
