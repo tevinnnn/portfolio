@@ -14,61 +14,49 @@
 /* RESET */
 
 * {
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 
 html {
-    scroll-behavior:smooth;
+    scroll-behavior: smooth;
 }
 
 
 body {
-    font-family:'Inter', sans-serif;
-    background:var(--bg);
-    color:white;
-    line-height:1.6;
+    font-family: 'Inter', sans-serif;
+    background: var(--bg);
+    color: var(--white);
+    line-height: 1.6;
 }
 
 
 h1,
 h2,
 h3 {
-
-    font-family:'Space Grotesk', sans-serif;
-
-    color:white;
-
-    letter-spacing:-0.03em;
-
+    font-family: 'Space Grotesk', sans-serif;
+    color: #FFFFFF;
+    letter-spacing: -0.03em;
 }
 
 
 h4 {
-
-    font-family:'Inter', sans-serif;
-
-    color:white;
-
+    font-family: 'Inter', sans-serif;
+    color: #FFFFFF;
 }
 
 
 p,
 li {
-
-    color:white;
-
+    color: #FFFFFF;
 }
 
 
 a {
-
-    color:white;
-
-    text-decoration:none;
-
+    color: #FFFFFF;
+    text-decoration: none;
 }
 
 
@@ -78,59 +66,38 @@ a {
 /* HEADER */
 
 header {
-
-    background:#020203;
-
-    border-bottom:1px solid var(--border);
-
+    background: #020203;
+    border-bottom: 1px solid var(--border);
 }
 
 
 nav {
+    max-width: 1100px;
+    margin: auto;
+    padding: 22px 30px;
 
-    max-width:1100px;
-
-    margin:auto;
-
-    padding:22px 30px;
-
-    display:flex;
-
-    justify-content:space-between;
-
-    align-items:center;
-
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 
 .logo {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 32px;
+    font-weight: 800;
+    letter-spacing: -0.08em;
+    line-height: 1;
+    padding: 6px;
 
-    font-family:'Space Grotesk', sans-serif;
-
-    font-size:32px;
-
-    font-weight:800;
-
-    letter-spacing:-0.08em;
-
-    line-height:1;
-
-    padding:6px;
-
-
-    background:
-
-    linear-gradient(
+    background: linear-gradient(
         135deg,
         var(--purple-light),
         var(--blue)
     );
 
-
-    -webkit-background-clip:text;
-
-    -webkit-text-fill-color:transparent;
-
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 
@@ -140,41 +107,26 @@ nav {
 /* NAV */
 
 nav div:last-child {
-
-    display:flex;
-
-    align-items:center;
-
-    gap:12px;
-
+    display: flex;
+    align-items: center;
+    gap: 12px;
 }
 
 
 nav a {
+    padding: 8px 14px;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 600;
+    white-space: nowrap;
 
-    color:white;
-
-    padding:8px 14px;
-
-    border-radius:8px;
-
-    font-size:15px;
-
-    font-weight:600;
-
-    white-space:nowrap;
-
-    transition:.25s ease;
-
+    transition: .25s ease;
 }
 
 
 nav a:hover {
-
-    background:#0D0914;
-
-    color:#A98AD0;
-
+    background: #0D0914;
+    color: #A98AD0;
 }
 
 
@@ -184,27 +136,19 @@ nav a:hover {
 /* MAIN */
 
 main {
-
-    max-width:1100px;
-
-    margin:auto;
-
-    padding:0 30px;
-
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 30px;
 }
 
 
 section {
-
-    margin:60px 0;
-
+    margin: 60px 0;
 }
 
 
 section h2 {
-
-    margin-bottom:30px;
-
+    margin-bottom: 30px;
 }
 
 
@@ -214,46 +158,32 @@ section h2 {
 /* HERO */
 
 .hero {
-
-    padding-top:70px;
-
+    padding-top: 70px;
 }
 
 
 .hero h1 {
-
-    font-size:64px;
-
+    font-size: 64px;
 }
 
 
 .hero h2 {
-
-    font-size:22px;
-
-    font-weight:500;
-
+    font-size: 22px;
+    font-weight: 500;
 }
 
 
 .hero p {
-
-    max-width:650px;
-
-    margin-top:20px;
-
-    display:block;
-
+    max-width: 650px;
+    margin-top: 20px;
+    display: block;
 }
 
 
-
-/* Remove hover animation from hero text */
+/* Remove hover effect from hero statement */
 
 .hero p::after {
-
-    display:none;
-
+    display: none;
 }
 
 
@@ -263,44 +193,29 @@ section h2 {
 /* BUTTONS */
 
 .buttons {
-
-    display:flex;
-
-    gap:15px;
-
-    margin-top:30px;
-
+    display: flex;
+    gap: 15px;
+    margin-top: 30px;
 }
 
 
 .buttons a {
-
-    background:
-
-    linear-gradient(
+    background: linear-gradient(
         135deg,
         var(--purple),
         var(--blue)
     );
 
+    padding: 10px 22px;
+    border-radius: 8px;
+    font-weight: 600;
 
-    color:white;
-
-    padding:10px 22px;
-
-    border-radius:8px;
-
-    font-weight:600;
-
-    transition:.25s ease;
-
+    transition: .25s ease;
 }
 
 
 .buttons a:hover {
-
-    transform:translateY(-2px);
-
+    transform: translateY(-2px);
 }
 
 
@@ -310,57 +225,50 @@ section h2 {
 /* STATS */
 
 .stats {
-
-    display:grid;
-
-    grid-template-columns:repeat(3,1fr);
-
-    gap:20px;
-
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
 }
 
 
 .stats div {
+    background: var(--card);
 
-    background:var(--card);
+    border: 1px solid var(--border);
+    border-radius: 14px;
 
-    border:1px solid var(--border);
+    padding: 25px;
 
-    border-radius:14px;
+    position: relative;
+    overflow: hidden;
 
-    padding:25px;
+    transition: .3s ease;
+}
 
-    position:relative;
 
-    overflow:hidden;
-
+.stats div:hover {
+    border-color: #302044;
+    transform: translateY(-3px);
 }
 
 
 .stats strong {
+    display: block;
 
-    display:block;
-
-    font-family:'Space Grotesk';
-
-    font-size:38px;
-
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 38px;
 }
 
 
 .stats span {
-
-    display:block;
-
-    color:white;
-
+    display: block;
 }
 
 
 
 
 
-/* TEXT HOVER EFFECT */
+/* HOVER SWEEP */
 
 .card p,
 .card li,
@@ -368,13 +276,10 @@ section h2 {
 .skills span,
 .stats span {
 
-
-    position:relative;
-
-    overflow:hidden;
+    position: relative;
+    overflow: hidden;
 
 }
-
 
 
 .card p::after,
@@ -383,34 +288,26 @@ section h2 {
 .skills span::after,
 .stats span::after {
 
+    content: "";
 
-    content:"";
+    position: absolute;
 
-    position:absolute;
+    top: 0;
+    left: -120%;
 
-    top:0;
+    width: 70%;
+    height: 100%;
 
-    left:-120%;
-
-    width:70%;
-
-    height:100%;
-
-
-    background:
-
-    linear-gradient(
+    background: linear-gradient(
         120deg,
         transparent,
         rgba(255,255,255,.12),
         transparent
     );
 
-
-    transition:left .75s ease;
+    transition: left .75s ease;
 
 }
-
 
 
 .card p:hover::after,
@@ -419,7 +316,7 @@ section h2 {
 .skills span:hover::after,
 .stats span:hover::after {
 
-    left:130%;
+    left: 130%;
 
 }
 
@@ -431,72 +328,73 @@ section h2 {
 
 .card {
 
-    background:var(--card);
+    background: var(--card);
 
-    border:1px solid var(--border);
+    border: 1px solid var(--border);
 
-    border-radius:14px;
+    border-radius: 14px;
 
-    padding:30px;
+    padding: 30px;
 
-    margin-bottom:25px;
+    margin-bottom: 25px;
+
+    transition: .3s ease;
+
+}
+
+
+.card:hover {
+
+    border-color: #302044;
 
 }
 
 
 .card h3 {
 
-    font-size:26px;
+    font-size: 26px;
 
-    margin-bottom:6px;
-
-    line-height:1.2;
+    margin-bottom: 6px;
 
 }
 
 
 .card h4 {
 
-    font-size:18px;
+    font-size: 18px;
 
-    font-weight:600;
+    font-weight: 600;
 
-    margin-bottom:8px;
-
-    line-height:1.4;
+    margin-bottom: 8px;
 
 }
 
 
 .card p {
 
-    display:block;
+    width: 100%;
 
-    width:100%;
+    text-align: left;
 
-    text-align:left;
+    margin-bottom: 20px;
 
 }
 
 
 .card ul {
 
-    width:100%;
+    width: 100%;
 
-    padding-left:22px;
-
-    margin-top:15px;
+    padding-left: 22px;
 
 }
 
 
 .card li {
 
-    display:list-item;
+    margin-bottom: 12px;
 
-    margin-bottom:12px;
-
-    line-height:1.6;
+    line-height: 1.6;
 
 }
 
@@ -508,9 +406,9 @@ section h2 {
 
 .game-grid {
 
-    display:grid;
+    display: grid;
 
-    grid-template-columns:repeat(3,1fr);
+    grid-template-columns: repeat(3,1fr);
 
     gap:20px;
 
@@ -526,6 +424,17 @@ section h2 {
     border-radius:14px;
 
     overflow:hidden;
+
+    transition:.3s ease;
+
+}
+
+
+.game-card:hover {
+
+    border-color:#302044;
+
+    transform:translateY(-3px);
 
 }
 
@@ -544,15 +453,6 @@ section h2 {
 .game-card div {
 
     padding:20px;
-
-}
-
-
-.game-card p {
-
-    display:block;
-
-    width:100%;
 
 }
 
@@ -602,16 +502,12 @@ section h2 {
 
     text-align:center;
 
-    margin-bottom:15px;
-
 }
 
 
 #contact a {
 
     display:inline-block;
-
-    text-align:center;
 
     font-weight:600;
 
@@ -624,7 +520,6 @@ section h2 {
 /* MOBILE */
 
 @media(max-width:800px){
-
 
     nav {
 
