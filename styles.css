@@ -236,6 +236,18 @@ section h2 {
 }
 
 
+.hero h1,
+.hero h2,
+.hero p,
+.social-links {
+
+    width:650px;
+
+    max-width:100%;
+
+}
+
+
 .hero h1 {
 
     font-size:64px;
@@ -254,13 +266,14 @@ section h2 {
 
 .hero p {
 
-    max-width:650px;
-
     margin-top:20px;
 
     text-align:left;
 
 }
+
+
+
 
 
 /* =========================
@@ -278,8 +291,6 @@ section h2 {
     justify-content:flex-start;
 
     gap:14px;
-
-    width:650px;
 
 }
 
