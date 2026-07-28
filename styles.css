@@ -1,143 +1,80 @@
 :root {
-    --bg: #040307;
-    --card: #09070D;
-    --border: #18121F;
+    --bg: #020203;
+    --card: #08080B;
+    --border: #17131D;
 
     --white: #FFFFFF;
+    --gray: #B5B5B8;
 
-    --purple: #3A2458;
-    --purple-light: #5B3A82;
-    --blue: #1D2D52;
+    --purple: #4B3268;
+    --blue: #243653;
 }
 
 
 /* RESET */
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
 
 html {
-    scroll-behavior: smooth;
+    scroll-behavior:smooth;
 }
 
 
 body {
 
-    font-family: 'Inter', sans-serif;
+    font-family:'Inter', sans-serif;
 
-    background: #040307;
+    background:#020203;
 
-    color: #FFFFFF;
+    color:#FFFFFF;
 
-    line-height: 1.6;
+    line-height:1.6;
 
 }
 
 
 h1,
 h2,
-h3,
+h3 {
+
+    font-family:'Space Grotesk', sans-serif;
+
+    color:#FFFFFF;
+
+    letter-spacing:-0.025em;
+
+}
+
+
 h4 {
 
-    font-family: 'Space Grotesk', sans-serif;
+    font-family:'Inter', sans-serif;
 
-    color: #FFFFFF;
-
-    letter-spacing: -0.03em;
+    color:#FFFFFF;
 
 }
 
 
 p,
-li,
-span {
+li {
 
-    color: #FFFFFF;
+    color:#FFFFFF;
 
 }
 
 
 a {
 
-    color: #FFFFFF;
+    text-decoration:none;
 
-    text-decoration: none;
-
-}
-
-
-
-
-
-/* TEXT HIGHLIGHT SWEEP EFFECT */
-
-p,
-li,
-h3,
-h4,
-.skills span,
-.game-card p {
-
-    position: relative;
-
-    overflow: hidden;
-
-    display: inline-block;
+    color:#FFFFFF;
 
 }
-
-
-p::after,
-li::after,
-h3::after,
-h4::after,
-.skills span::after,
-.game-card p::after {
-
-    content: "";
-
-    position: absolute;
-
-    top: 0;
-
-    left: -120%;
-
-    width: 60%;
-
-    height: 100%;
-
-
-    background:
-
-    linear-gradient(
-        120deg,
-        transparent,
-        rgba(255,255,255,.18),
-        transparent
-    );
-
-
-    transition: .6s ease;
-
-}
-
-
-p:hover::after,
-li:hover::after,
-h3:hover::after,
-h4:hover::after,
-.skills span:hover::after,
-.game-card p:hover::after {
-
-    left: 130%;
-
-}
-
-
 
 
 
@@ -145,7 +82,7 @@ h4:hover::after,
 
 header {
 
-    background:#040307;
+    background:#020203;
 
     border-bottom:1px solid var(--border);
 
@@ -175,35 +112,24 @@ nav {
 
     font-family:'Space Grotesk', sans-serif;
 
-    font-size:28px;
+    font-size:30px;
 
     font-weight:800;
 
-    letter-spacing:-0.06em;
+    letter-spacing:-0.08em;
 
 
     background:
-
     linear-gradient(
         135deg,
-        var(--purple-light),
-        var(--blue)
+        #4B3268,
+        #243653
     );
 
 
     -webkit-background-clip:text;
 
     -webkit-text-fill-color:transparent;
-
-}
-
-
-
-nav a {
-
-    color:#FFFFFF;
-
-    margin-left:20px;
 
 }
 
@@ -222,7 +148,6 @@ main {
     padding:0 30px;
 
 }
-
 
 
 section {
@@ -244,42 +169,36 @@ section {
 }
 
 
-
 .hero h1 {
 
     font-size:64px;
 
-    line-height:1.1;
-
-    color:#FFFFFF;
-
 }
-
 
 
 .hero h2 {
 
-    color:#FFFFFF;
-
-    font-family:'Inter', sans-serif;
+    font-size:22px;
 
     font-weight:500;
 
-}
+    margin-top:10px;
 
+}
 
 
 .hero p {
 
     max-width:650px;
 
+    margin-top:20px;
+
 }
 
 
 
 
-
-/* BUTTONS ONLY HAVE COLOR */
+/* BUTTONS */
 
 .buttons {
 
@@ -289,10 +208,7 @@ section {
 
     margin-top:30px;
 
-    flex-wrap:wrap;
-
 }
-
 
 
 .buttons a {
@@ -306,17 +222,13 @@ section {
     );
 
 
-    color:#FFFFFF;
-
-    padding:10px 20px;
+    padding:10px 22px;
 
     border-radius:8px;
 
     font-weight:600;
 
-    border:1px solid var(--purple-light);
-
-    transition:.25s;
+    transition:.25s ease;
 
 }
 
@@ -324,7 +236,7 @@ section {
 
 .buttons a:hover {
 
-    transform:translateY(-3px);
+    transform:translateY(-2px);
 
 }
 
@@ -345,32 +257,15 @@ section {
 }
 
 
-
 .stats div {
 
     background:var(--card);
 
     border:1px solid var(--border);
 
-    border-radius:12px;
+    border-radius:14px;
 
     padding:25px;
-
-    position:relative;
-
-    overflow:hidden;
-
-    transition:.3s;
-
-}
-
-
-
-.stats div:hover {
-
-    border-color:var(--purple-light);
-
-    transform:translateY(-4px);
 
 }
 
@@ -378,9 +273,9 @@ section {
 
 .stats strong {
 
-    color:#FFFFFF;
+    font-family:'Space Grotesk';
 
-    font-size:36px;
+    font-size:38px;
 
 }
 
@@ -399,48 +294,21 @@ section {
 /* CARDS */
 
 .card,
-.game-card {
+.game-card,
+.stats div {
 
-    background:var(--card);
+    position:relative;
 
-    border:1px solid var(--border);
-
-    border-radius:12px;
-
-    transition:.3s;
+    overflow:hidden;
 
 }
 
 
 
-.card {
+.card::after,
+.game-card::after,
+.stats div::after {
 
-    padding:30px;
-
-    margin-bottom:25px;
-
-}
-
-
-
-.card:hover,
-.game-card:hover {
-
-    transform:translateY(-4px);
-
-    border-color:var(--purple-light);
-
-}
-
-
-
-
-
-/* CARD SHINE */
-
-.card::before,
-.game-card::before,
-.stats div::before {
 
     content:"";
 
@@ -450,7 +318,7 @@ section {
 
     left:-120%;
 
-    width:80%;
+    width:70%;
 
     height:100%;
 
@@ -460,22 +328,32 @@ section {
     linear-gradient(
         120deg,
         transparent,
-        rgba(91,58,130,.18),
+        rgba(255,255,255,.08),
         transparent
     );
 
 
-    transition:.6s;
+    transition:.8s ease;
 
 }
 
 
 
-.card:hover::before,
-.game-card:hover::before,
-.stats div:hover::before {
+.card:hover::after,
+.game-card:hover::after,
+.stats div:hover::after {
 
-    left:140%;
+    left:130%;
+
+}
+
+
+
+.card:hover,
+.game-card:hover,
+.stats div:hover {
+
+    border-color:#302044;
 
 }
 
@@ -483,7 +361,78 @@ section {
 
 
 
-/* GAME GRID */
+/* EXPERIENCE */
+
+.card {
+
+    background:var(--card);
+
+    border:1px solid var(--border);
+
+    border-radius:14px;
+
+    padding:30px;
+
+    margin-bottom:25px;
+
+}
+
+
+
+.card h3 {
+
+    font-size:26px;
+
+    margin-bottom:5px;
+
+}
+
+
+
+.card h4 {
+
+    font-size:18px;
+
+    font-weight:600;
+
+    margin-bottom:8px;
+
+}
+
+
+
+.card p:first-of-type {
+
+    color:#B5B5B8;
+
+    font-size:15px;
+
+    margin-bottom:18px;
+
+}
+
+
+
+.card ul {
+
+    margin-top:15px;
+
+    padding-left:20px;
+
+}
+
+
+.card li {
+
+    margin-bottom:10px;
+
+}
+
+
+
+
+
+/* GAME SECTION */
 
 .game-grid {
 
@@ -498,10 +447,13 @@ section {
 
 .game-card {
 
-    overflow:hidden;
+    background:var(--card);
+
+    border:1px solid var(--border);
+
+    border-radius:14px;
 
 }
-
 
 
 .game-card img {
@@ -542,9 +494,9 @@ section {
 
 .skills span {
 
-    background:#0C0812;
+    background:#09070D;
 
-    border:1px solid #241832;
+    border:1px solid #241833;
 
     border-radius:20px;
 
@@ -566,9 +518,21 @@ section {
 
 
 
+#contact p {
+
+    margin-bottom:15px;
+
+}
+
+
+
 #contact a {
 
+    display:inline-block;
+
     color:#FFFFFF;
+
+    font-weight:600;
 
 }
 
@@ -578,16 +542,7 @@ section {
 
 /* MOBILE */
 
-@media(max-width:800px) {
-
-    nav {
-
-        flex-direction:column;
-
-        gap:15px;
-
-    }
-
+@media(max-width:800px){
 
     .hero h1 {
 
