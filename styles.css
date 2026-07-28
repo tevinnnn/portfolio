@@ -14,261 +14,345 @@
 /* RESET */
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
 
 html {
-    scroll-behavior: smooth;
+    scroll-behavior:smooth;
 }
 
 
 body {
-    font-family: 'Inter', sans-serif;
-    background: var(--bg);
-    color: var(--white);
-    line-height: 1.6;
+    font-family:'Inter', sans-serif;
+    background:var(--bg);
+    color:white;
+    line-height:1.6;
 }
 
 
 h1,
 h2,
 h3 {
-    font-family: 'Space Grotesk', sans-serif;
-    color: #FFFFFF;
-    letter-spacing: -0.03em;
+
+    font-family:'Space Grotesk', sans-serif;
+
+    color:white;
+
+    letter-spacing:-0.03em;
+
 }
 
 
 h4 {
-    font-family: 'Inter', sans-serif;
-    color: #FFFFFF;
+
+    font-family:'Inter', sans-serif;
+
+    color:white;
+
 }
 
 
 p,
 li {
-    color: #FFFFFF;
+
+    color:white;
+
 }
 
 
 a {
-    color: #FFFFFF;
-    text-decoration: none;
+
+    color:white;
+
+    text-decoration:none;
+
 }
+
+
 
 
 
 /* HEADER */
 
 header {
-    background: #020203;
-    border-bottom: 1px solid var(--border);
+
+    background:#020203;
+
+    border-bottom:1px solid var(--border);
+
 }
 
 
 nav {
-    max-width: 1100px;
-    margin: auto;
-    padding: 22px 30px;
 
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    max-width:1100px;
+
+    margin:auto;
+
+    padding:22px 30px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
 }
 
 
 .logo {
-    font-family: 'Space Grotesk', sans-serif;
-    font-size: 32px;
-    font-weight: 800;
-    letter-spacing: -0.08em;
-    line-height: 1;
-    padding: 6px;
+
+    font-family:'Space Grotesk', sans-serif;
+
+    font-size:32px;
+
+    font-weight:800;
+
+    letter-spacing:-0.08em;
+
+    line-height:1;
+
+    padding:6px;
+
 
     background:
+
     linear-gradient(
         135deg,
         var(--purple-light),
         var(--blue)
     );
 
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+
+    -webkit-background-clip:text;
+
+    -webkit-text-fill-color:transparent;
+
 }
 
 
+
+
+
+/* NAV */
+
 nav div:last-child {
-    display: flex;
-    align-items: center;
-    gap: 12px;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
 }
 
 
 nav a {
-    color: #FFFFFF;
-    padding: 8px 14px;
-    border-radius: 8px;
-    font-size: 15px;
-    font-weight: 600;
-    white-space: nowrap;
 
-    transition: .25s ease;
+    color:white;
+
+    padding:8px 14px;
+
+    border-radius:8px;
+
+    font-size:15px;
+
+    font-weight:600;
+
+    white-space:nowrap;
+
+    transition:.25s ease;
+
 }
 
 
 nav a:hover {
-    background: #0D0914;
-    color: #A98AD0;
+
+    background:#0D0914;
+
+    color:#A98AD0;
+
 }
+
+
 
 
 
 /* MAIN */
 
 main {
-    max-width: 1100px;
-    margin: auto;
-    padding: 0 30px;
+
+    max-width:1100px;
+
+    margin:auto;
+
+    padding:0 30px;
+
 }
 
 
 section {
-    margin: 60px 0;
+
+    margin:60px 0;
+
 }
 
 
 section h2 {
-    text-align: left;
-    margin-bottom: 30px;
+
+    margin-bottom:30px;
+
 }
+
+
 
 
 
 /* HERO */
 
 .hero {
-    padding-top: 70px;
+
+    padding-top:70px;
+
 }
 
 
 .hero h1 {
-    font-size: 64px;
+
+    font-size:64px;
+
 }
 
 
 .hero h2 {
-    font-size: 22px;
-    font-weight: 500;
+
+    font-size:22px;
+
+    font-weight:500;
+
 }
 
 
 .hero p {
-    max-width: 650px;
-    margin-top: 20px;
+
+    max-width:650px;
+
+    margin-top:20px;
+
+    display:block;
+
 }
 
 
-/* Remove hover animation ONLY from hero text */
+
+/* Remove hover animation from hero text */
 
 .hero p::after {
-    display: none;
+
+    display:none;
+
 }
 
 
-.hero p {
-    overflow: visible;
-}
 
 
 
 /* BUTTONS */
 
 .buttons {
-    display: flex;
-    gap: 15px;
-    margin-top: 30px;
+
+    display:flex;
+
+    gap:15px;
+
+    margin-top:30px;
+
 }
 
 
 .buttons a {
+
     background:
+
     linear-gradient(
         135deg,
         var(--purple),
         var(--blue)
     );
 
-    color: white;
 
-    padding: 10px 22px;
+    color:white;
 
-    border-radius: 8px;
+    padding:10px 22px;
 
-    font-weight: 600;
+    border-radius:8px;
 
-    transition: .25s ease;
+    font-weight:600;
+
+    transition:.25s ease;
+
 }
 
 
 .buttons a:hover {
-    transform: translateY(-2px);
+
+    transform:translateY(-2px);
+
 }
+
+
 
 
 
 /* STATS */
 
 .stats {
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    gap: 20px;
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:20px;
+
 }
 
 
 .stats div {
 
-    background: var(--card);
+    background:var(--card);
 
-    border: 1px solid var(--border);
+    border:1px solid var(--border);
 
-    border-radius: 14px;
+    border-radius:14px;
 
-    padding: 25px;
+    padding:25px;
 
-    position: relative;
+    position:relative;
 
-    overflow: hidden;
-
-    transition: .3s ease;
-}
-
-
-.stats div:hover {
-
-    border-color: #302044;
-
-    transform: translateY(-3px);
+    overflow:hidden;
 
 }
 
 
 .stats strong {
 
-    color: white;
+    display:block;
 
-    font-family: 'Space Grotesk';
+    font-family:'Space Grotesk';
 
-    font-size: 38px;
+    font-size:38px;
 
 }
 
 
 .stats span {
 
-    color: white;
+    display:block;
+
+    color:white;
 
 }
 
@@ -276,7 +360,7 @@ section h2 {
 
 
 
-/* TEXT HOVER SWEEP */
+/* TEXT HOVER EFFECT */
 
 .card p,
 .card li,
@@ -284,13 +368,13 @@ section h2 {
 .skills span,
 .stats span {
 
-    position: relative;
 
-    display: inline-block;
+    position:relative;
 
-    overflow: hidden;
+    overflow:hidden;
 
 }
+
 
 
 .card p::after,
@@ -298,6 +382,7 @@ section h2 {
 .game-card p::after,
 .skills span::after,
 .stats span::after {
+
 
     content:"";
 
@@ -327,6 +412,7 @@ section h2 {
 }
 
 
+
 .card p:hover::after,
 .card li:hover::after,
 .game-card p:hover::after,
@@ -341,11 +427,11 @@ section h2 {
 
 
 
-/* EXPERIENCE CARDS */
+/* EXPERIENCE */
 
 .card {
 
-    background: var(--card);
+    background:var(--card);
 
     border:1px solid var(--border);
 
@@ -354,15 +440,6 @@ section h2 {
     padding:30px;
 
     margin-bottom:25px;
-
-    transition:.3s ease;
-
-}
-
-
-.card:hover {
-
-    border-color:#302044;
 
 }
 
@@ -391,25 +468,31 @@ section h2 {
 }
 
 
-.card p:first-of-type {
+.card p {
 
-    font-size:15px;
+    display:block;
 
-    margin-bottom:20px;
+    width:100%;
+
+    text-align:left;
 
 }
 
 
 .card ul {
 
-    margin-top:15px;
+    width:100%;
 
     padding-left:22px;
+
+    margin-top:15px;
 
 }
 
 
 .card li {
+
+    display:list-item;
 
     margin-bottom:12px;
 
@@ -421,7 +504,7 @@ section h2 {
 
 
 
-/* GAMES */
+/* GAME CARDS */
 
 .game-grid {
 
@@ -444,17 +527,6 @@ section h2 {
 
     overflow:hidden;
 
-    transition:.3s ease;
-
-}
-
-
-.game-card:hover {
-
-    border-color:#302044;
-
-    transform:translateY(-3px);
-
 }
 
 
@@ -472,6 +544,15 @@ section h2 {
 .game-card div {
 
     padding:20px;
+
+}
+
+
+.game-card p {
+
+    display:block;
+
+    width:100%;
 
 }
 
@@ -497,8 +578,6 @@ section h2 {
     background:#09070D;
 
     border:1px solid #241833;
-
-    color:white;
 
     border-radius:20px;
 
@@ -534,8 +613,6 @@ section h2 {
 
     text-align:center;
 
-    color:white;
-
     font-weight:600;
 
 }
@@ -547,6 +624,7 @@ section h2 {
 /* MOBILE */
 
 @media(max-width:800px){
+
 
     nav {
 
