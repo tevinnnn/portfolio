@@ -85,39 +85,46 @@ nav {
 .logo {
     position: relative;
 
+    width: 64px;
+    height: 64px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
     font-family: "Space Grotesk", sans-serif;
 
-    font-size: 38px;
+    font-size: 34px;
 
-    font-weight: 800;
+    font-weight: 700;
 
     letter-spacing: -0.12em;
 
-    line-height: 1;
-
-    padding: 10px 14px;
+    padding-right: 3px;
 
     color: white;
 
-    background:
-        linear-gradient(
-            135deg,
-            #6d4aa5,
-            #243653
-        );
+    background: linear-gradient(
+        145deg,
+        #5B3A82,
+        #243653
+    );
 
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 
 
     filter:
-        drop-shadow(0 0 8px rgba(75,50,104,.35));
+        drop-shadow(0 0 10px rgba(75,50,104,.45));
 
-    transition: .35s ease;
+
+    transition:
+        transform .35s ease,
+        filter .35s ease;
 }
 
 
-/* TS emblem border */
+/* Premium monogram frame */
 
 .logo::before {
 
@@ -127,20 +134,51 @@ nav {
 
     inset:0;
 
-    border:1px solid rgba(91,58,130,.35);
+    border-radius:14px;
 
-    border-radius:10px;
+    border:1px solid rgba(91,58,130,.45);
+
 
     background:
         linear-gradient(
-            135deg,
-            rgba(91,58,130,.15),
-            rgba(36,54,83,.05)
+            145deg,
+            rgba(91,58,130,.18),
+            rgba(36,54,83,.08)
         );
+
 
     z-index:-1;
 
-    transition:.35s ease;
+}
+
+
+/* Inner accent line */
+
+.logo::after {
+
+    content:"";
+
+    position:absolute;
+
+    width:28px;
+
+    height:2px;
+
+    bottom:8px;
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+
+    background:linear-gradient(
+        90deg,
+        #5B3A82,
+        #243653
+    );
+
+
+    opacity:.8;
 
 }
 
@@ -149,17 +187,12 @@ nav {
 
 .logo:hover {
 
+    transform:translateY(-3px);
+
     filter:
         drop-shadow(0 0 18px rgba(91,58,130,.75));
 
-    transform:translateY(-2px);
-
 }
-
-
-.logo:hover::before {
-
-    border-color:rgba(91,58,130,.8);
 
 }
 
