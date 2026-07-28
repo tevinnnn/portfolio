@@ -364,7 +364,9 @@ section h2 {
 ========================= */
 
 .social-links {
-    margin-top:30px;
+
+    margin-top:25px;
+
 }
 
 
@@ -372,15 +374,15 @@ section h2 {
 
     display:inline-flex;
 
-    width:42px;
+    width:32px;
 
-    height:42px;
+    height:32px;
 
     align-items:center;
 
     justify-content:center;
 
-    border-radius:10px;
+    border-radius:7px;
 
     background:#08070B;
 
@@ -395,9 +397,9 @@ section h2 {
 
 .social-links svg {
 
-    width:22px;
+    width:16px;
 
-    height:22px;
+    height:16px;
 
 }
 
@@ -408,9 +410,9 @@ section h2 {
 
     border-color:#5B3A82;
 
-    transform:translateY(-3px);
+    transform:translateY(-2px);
 
-    box-shadow:0 0 18px rgba(91,58,130,.35);
+    box-shadow:0 0 12px rgba(91,58,130,.25);
 
 }
 
