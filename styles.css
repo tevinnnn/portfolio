@@ -130,19 +130,13 @@ a {
 }
 
 
-.logo img {
+.logo svg {
 
     width:42px;
 
     height:42px;
 
-    object-fit:contain;
-
-    filter:
-        brightness(0)
-        invert(1);
-
-    transition:none;
+    display:block;
 
 }
 
