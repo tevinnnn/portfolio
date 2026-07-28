@@ -1,10 +1,9 @@
 :root {
-    --bg: #05030A;
-    --card: #0B0812;
-    --border: #1C1528;
+    --bg: #040307;
+    --card: #09070D;
+    --border: #18121F;
 
-    --text: #FFFFFF;
-    --muted: #A09AAE;
+    --white: #FFFFFF;
 
     --purple: #3A2458;
     --purple-light: #5B3A82;
@@ -30,14 +29,13 @@ body {
 
     font-family: 'Inter', sans-serif;
 
-    background: #05030A;
+    background: #040307;
 
     color: #FFFFFF;
 
     line-height: 1.6;
 
 }
-
 
 
 h1,
@@ -47,14 +45,25 @@ h4 {
 
     font-family: 'Space Grotesk', sans-serif;
 
+    color: #FFFFFF;
+
     letter-spacing: -0.03em;
+
+}
+
+
+p,
+li,
+span {
+
+    color: #FFFFFF;
 
 }
 
 
 a {
 
-    color: inherit;
+    color: #FFFFFF;
 
     text-decoration: none;
 
@@ -62,13 +71,83 @@ a {
 
 
 
+
+
+/* TEXT HIGHLIGHT SWEEP EFFECT */
+
+p,
+li,
+h3,
+h4,
+.skills span,
+.game-card p {
+
+    position: relative;
+
+    overflow: hidden;
+
+    display: inline-block;
+
+}
+
+
+p::after,
+li::after,
+h3::after,
+h4::after,
+.skills span::after,
+.game-card p::after {
+
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+
+    left: -120%;
+
+    width: 60%;
+
+    height: 100%;
+
+
+    background:
+
+    linear-gradient(
+        120deg,
+        transparent,
+        rgba(255,255,255,.18),
+        transparent
+    );
+
+
+    transition: .6s ease;
+
+}
+
+
+p:hover::after,
+li:hover::after,
+h3:hover::after,
+h4:hover::after,
+.skills span:hover::after,
+.game-card p:hover::after {
+
+    left: 130%;
+
+}
+
+
+
+
+
 /* HEADER */
 
 header {
 
-    background: #05030A;
+    background:#040307;
 
-    border-bottom: 1px solid var(--border);
+    border-bottom:1px solid var(--border);
 
 }
 
@@ -76,17 +155,17 @@ header {
 
 nav {
 
-    max-width: 1100px;
+    max-width:1100px;
 
-    margin: auto;
+    margin:auto;
 
-    padding: 20px 30px;
+    padding:20px 30px;
 
-    display: flex;
+    display:flex;
 
-    justify-content: space-between;
+    justify-content:space-between;
 
-    align-items: center;
+    align-items:center;
 
 }
 
@@ -94,13 +173,13 @@ nav {
 
 .logo {
 
-    font-family: 'Space Grotesk', sans-serif;
+    font-family:'Space Grotesk', sans-serif;
 
-    font-size: 28px;
+    font-size:28px;
 
-    font-weight: 800;
+    font-weight:800;
 
-    letter-spacing: -0.06em;
+    letter-spacing:-0.06em;
 
 
     background:
@@ -112,9 +191,9 @@ nav {
     );
 
 
-    -webkit-background-clip: text;
+    -webkit-background-clip:text;
 
-    -webkit-text-fill-color: transparent;
+    -webkit-text-fill-color:transparent;
 
 }
 
@@ -122,18 +201,9 @@ nav {
 
 nav a {
 
-    margin-left: 20px;
+    color:#FFFFFF;
 
-    color: var(--muted);
-
-    transition: .2s ease;
-
-}
-
-
-nav a:hover {
-
-    color: #FFFFFF;
+    margin-left:20px;
 
 }
 
@@ -145,11 +215,11 @@ nav a:hover {
 
 main {
 
-    max-width: 1100px;
+    max-width:1100px;
 
-    margin: auto;
+    margin:auto;
 
-    padding: 0 30px;
+    padding:0 30px;
 
 }
 
@@ -157,7 +227,7 @@ main {
 
 section {
 
-    margin: 60px 0;
+    margin:60px 0;
 
 }
 
@@ -169,7 +239,7 @@ section {
 
 .hero {
 
-    padding-top: 70px;
+    padding-top:70px;
 
 }
 
@@ -177,25 +247,11 @@ section {
 
 .hero h1 {
 
-    font-size: 64px;
+    font-size:64px;
 
-    line-height: 1.1;
+    line-height:1.1;
 
-    margin-bottom: 15px;
-
-
-    background:
-
-    linear-gradient(
-        90deg,
-        #FFFFFF,
-        var(--purple-light)
-    );
-
-
-    -webkit-background-clip: text;
-
-    -webkit-text-fill-color: transparent;
+    color:#FFFFFF;
 
 }
 
@@ -203,15 +259,11 @@ section {
 
 .hero h2 {
 
-    font-family: 'Inter', sans-serif;
+    color:#FFFFFF;
 
-    font-size: 22px;
+    font-family:'Inter', sans-serif;
 
-    font-weight: 500;
-
-    color: #A09AAE;
-
-    margin-bottom: 20px;
+    font-weight:500;
 
 }
 
@@ -219,11 +271,7 @@ section {
 
 .hero p {
 
-    max-width: 650px;
-
-    color: #FFFFFF;
-
-    font-size: 18px;
+    max-width:650px;
 
 }
 
@@ -231,17 +279,17 @@ section {
 
 
 
-/* BUTTONS */
+/* BUTTONS ONLY HAVE COLOR */
 
 .buttons {
 
-    display: flex;
+    display:flex;
 
-    gap: 15px;
+    gap:15px;
 
-    margin-top: 30px;
+    margin-top:30px;
 
-    flex-wrap: wrap;
+    flex-wrap:wrap;
 
 }
 
@@ -258,17 +306,17 @@ section {
     );
 
 
-    color: #FFFFFF;
+    color:#FFFFFF;
 
-    padding: 10px 20px;
+    padding:10px 20px;
 
-    border-radius: 8px;
+    border-radius:8px;
 
-    font-weight: 600;
+    font-weight:600;
 
-    border: 1px solid #5B3A82;
+    border:1px solid var(--purple-light);
 
-    transition: .25s ease;
+    transition:.25s;
 
 }
 
@@ -276,7 +324,7 @@ section {
 
 .buttons a:hover {
 
-    background: var(--purple-light);
+    transform:translateY(-3px);
 
 }
 
@@ -288,11 +336,11 @@ section {
 
 .stats {
 
-    display: grid;
+    display:grid;
 
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns:repeat(3,1fr);
 
-    gap: 20px;
+    gap:20px;
 
 }
 
@@ -300,19 +348,29 @@ section {
 
 .stats div {
 
-    background: var(--card);
+    background:var(--card);
 
-    border: 1px solid var(--border);
+    border:1px solid var(--border);
 
-    border-radius: 12px;
+    border-radius:12px;
 
-    padding: 25px;
+    padding:25px;
 
-    position: relative;
+    position:relative;
 
-    overflow: hidden;
+    overflow:hidden;
 
-    transition: .3s ease;
+    transition:.3s;
+
+}
+
+
+
+.stats div:hover {
+
+    border-color:var(--purple-light);
+
+    transform:translateY(-4px);
 
 }
 
@@ -320,11 +378,9 @@ section {
 
 .stats strong {
 
-    display: block;
+    color:#FFFFFF;
 
-    font-size: 36px;
-
-    color: #FFFFFF;
+    font-size:36px;
 
 }
 
@@ -332,7 +388,7 @@ section {
 
 .stats span {
 
-    color: #FFFFFF;
+    color:#FFFFFF;
 
 }
 
@@ -340,39 +396,63 @@ section {
 
 
 
-/* HOVER SHINE EFFECT */
+/* CARDS */
 
 .card,
-.stats div,
 .game-card {
 
-    position: relative;
+    background:var(--card);
 
-    overflow: hidden;
+    border:1px solid var(--border);
 
-    transition:
-    transform .3s ease,
-    border-color .3s ease;
+    border-radius:12px;
+
+    transition:.3s;
 
 }
 
 
 
+.card {
+
+    padding:30px;
+
+    margin-bottom:25px;
+
+}
+
+
+
+.card:hover,
+.game-card:hover {
+
+    transform:translateY(-4px);
+
+    border-color:var(--purple-light);
+
+}
+
+
+
+
+
+/* CARD SHINE */
+
 .card::before,
-.stats div::before,
-.game-card::before {
+.game-card::before,
+.stats div::before {
 
-    content: "";
+    content:"";
 
-    position: absolute;
+    position:absolute;
 
-    top: 0;
+    top:0;
 
-    left: -120%;
+    left:-120%;
 
-    width: 80%;
+    width:80%;
 
-    height: 100%;
+    height:100%;
 
 
     background:
@@ -385,29 +465,17 @@ section {
     );
 
 
-    transition: .6s ease;
+    transition:.6s;
 
 }
 
 
 
 .card:hover::before,
-.stats div:hover::before,
-.game-card:hover::before {
+.game-card:hover::before,
+.stats div:hover::before {
 
-    left: 140%;
-
-}
-
-
-
-.card:hover,
-.stats div:hover,
-.game-card:hover {
-
-    transform: translateY(-4px);
-
-    border-color: var(--purple-light);
+    left:140%;
 
 }
 
@@ -415,98 +483,7 @@ section {
 
 
 
-/* SECTION HEADERS */
-
-section h2 {
-
-    font-size: 32px;
-
-    color: #FFFFFF;
-
-    margin-bottom: 25px;
-
-}
-
-
-
-section h2::after {
-
-    content:"";
-
-    display:block;
-
-    width:45px;
-
-    height:3px;
-
-    margin-top:10px;
-
-
-    background: var(--purple-light);
-
-}
-
-
-
-
-
-/* EXPERIENCE */
-
-.card {
-
-    background: var(--card);
-
-    border:1px solid var(--border);
-
-    border-radius:12px;
-
-    padding:30px;
-
-    margin-bottom:25px;
-
-}
-
-
-
-.card h3 {
-
-    color:#FFFFFF;
-
-    font-size:24px;
-
-}
-
-
-
-.card h4 {
-
-    color:#A09AAE;
-
-}
-
-
-
-.card p,
-
-.card li {
-
-    color:#FFFFFF;
-
-}
-
-
-
-.card li {
-
-    margin-bottom:10px;
-
-}
-
-
-
-
-
-/* GAME CARDS */
+/* GAME GRID */
 
 .game-grid {
 
@@ -519,14 +496,9 @@ section h2::after {
 }
 
 
-
 .game-card {
 
-    background:var(--card);
-
-    border:1px solid var(--border);
-
-    border-radius:12px;
+    overflow:hidden;
 
 }
 
@@ -552,22 +524,6 @@ section h2::after {
 
 
 
-.game-card h3 {
-
-    color:#FFFFFF;
-
-}
-
-
-
-.game-card p {
-
-    color:#FFFFFF;
-
-}
-
-
-
 
 
 /* SKILLS */
@@ -586,11 +542,9 @@ section h2::after {
 
 .skills span {
 
-    background:#120D1E;
+    background:#0C0812;
 
-    border:1px solid #35244B;
-
-    color:#FFFFFF;
+    border:1px solid #241832;
 
     border-radius:20px;
 
@@ -614,9 +568,7 @@ section h2::after {
 
 #contact a {
 
-    color:var(--purple-light);
-
-    font-weight:600;
+    color:#FFFFFF;
 
 }
 
@@ -627,7 +579,6 @@ section h2::after {
 /* MOBILE */
 
 @media(max-width:800px) {
-
 
     nav {
 
@@ -645,13 +596,7 @@ section h2::after {
     }
 
 
-    .stats {
-
-        grid-template-columns:1fr;
-
-    }
-
-
+    .stats,
     .game-grid {
 
         grid-template-columns:1fr;
