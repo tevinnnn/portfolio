@@ -1,14 +1,14 @@
 :root {
-    --bg: #03040a;
-    --card: #090d18;
-    --border: #171c32;
+    --bg: #08050D;
+    --card: #0D0917;
+    --border: #21182F;
 
-    --text: #c9c7d8;
-    --muted: #777b95;
+    --text: #C8C4D6;
+    --muted: #777085;
 
-    --purple: #3b2468;
-    --purple-light: #5a3d8a;
-    --blue: #1b2a52;
+    --purple: #4B2E6D;
+    --purple-light: #6A478F;
+    --blue: #263B66;
 }
 
 
@@ -28,24 +28,8 @@ html {
 
 body {
     font-family: 'Inter', sans-serif;
-
-    background:
-        radial-gradient(
-            circle at 20% 10%,
-            rgba(59,36,104,.15),
-            transparent 35%
-        ),
-
-        radial-gradient(
-            circle at 80% 20%,
-            rgba(27,42,82,.15),
-            transparent 35%
-        ),
-
-        var(--bg);
-
+    background: var(--bg);
     color: var(--text);
-
     line-height: 1.6;
 }
 
@@ -69,80 +53,64 @@ a {
 /* HEADER */
 
 header {
-
-    background: rgba(3,4,10,.85);
-
+    background: #08050D;
     border-bottom: 1px solid var(--border);
-
-    backdrop-filter: blur(10px);
-
 }
 
 
 nav {
+    max-width: 1100px;
+    margin: auto;
 
-    max-width:1100px;
+    padding: 20px 30px;
 
-    margin:auto;
-
-    padding:20px 30px;
-
-    display:flex;
-
-    justify-content:space-between;
-
-    align-items:center;
-
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 
 
 .logo {
+    font-family: 'Space Grotesk', sans-serif;
 
-    font-family:'Space Grotesk', sans-serif;
+    font-size: 28px;
 
-    font-size:28px;
+    font-weight: 800;
 
-    font-weight:800;
-
-    letter-spacing:-0.06em;
+    letter-spacing: -0.06em;
 
 
     background:
+        linear-gradient(
+            135deg,
+            var(--purple-light),
+            var(--blue)
+        );
 
-    linear-gradient(
-        135deg,
-        #5a3d8a,
-        #1b2a52
-    );
 
-
-    -webkit-background-clip:text;
-
-    -webkit-text-fill-color:transparent;
-
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 
 
 nav a {
 
-    margin-left:20px;
+    margin-left: 20px;
 
-    color:#6f748d;
+    color: var(--muted);
 
-    transition:.2s;
+    transition: .2s ease;
 
 }
-
 
 
 nav a:hover {
 
-    color:#a99bc9;
+    color: #B8A7D2;
 
 }
-
 
 
 
@@ -150,21 +118,20 @@ nav a:hover {
 
 main {
 
-    max-width:1100px;
+    max-width: 1100px;
 
-    margin:auto;
+    margin: auto;
 
-    padding:0 30px;
+    padding: 0 30px;
 
 }
 
 
 section {
 
-    margin:60px 0;
+    margin: 60px 0;
 
 }
-
 
 
 
@@ -172,7 +139,7 @@ section {
 
 .hero {
 
-    padding-top:70px;
+    padding-top: 70px;
 
 }
 
@@ -180,25 +147,14 @@ section {
 
 .hero h1 {
 
-    font-size:64px;
+    font-size: 64px;
 
-    line-height:1.1;
+    line-height: 1.1;
 
-    margin-bottom:15px;
-
-
-    background:
-
-    linear-gradient(
-        90deg,
-        #c9c7d8,
-        #5a3d8a
-    );
+    margin-bottom: 15px;
 
 
-    -webkit-background-clip:text;
-
-    -webkit-text-fill-color:transparent;
+    color: #D6D1E2;
 
 }
 
@@ -206,15 +162,15 @@ section {
 
 .hero h2 {
 
-    font-family:'Inter', sans-serif;
+    font-family: 'Inter', sans-serif;
 
-    font-size:22px;
+    font-size: 22px;
 
-    font-weight:500;
+    font-weight: 500;
 
-    color:#777b95;
+    color: #7F7892;
 
-    margin-bottom:20px;
+    margin-bottom: 20px;
 
 }
 
@@ -222,14 +178,13 @@ section {
 
 .hero p {
 
-    max-width:650px;
+    max-width: 650px;
 
-    color:#999bb5;
+    color: #AAA4BA;
 
-    font-size:18px;
+    font-size: 18px;
 
 }
-
 
 
 
@@ -238,13 +193,13 @@ section {
 
 .buttons {
 
-    display:flex;
+    display: flex;
 
-    gap:15px;
+    gap: 15px;
 
-    margin-top:30px;
+    margin-top: 30px;
 
-    flex-wrap:wrap;
+    flex-wrap: wrap;
 
 }
 
@@ -252,26 +207,19 @@ section {
 
 .buttons a {
 
-    background:
+    background: var(--purple);
 
-    linear-gradient(
-        135deg,
-        #3b2468,
-        #1b2a52
-    );
+    color: #DDD6EA;
 
+    padding: 10px 20px;
 
-    color:#c9c7d8;
+    border-radius: 8px;
 
-    padding:10px 20px;
+    font-weight: 600;
 
-    border-radius:8px;
+    border: 1px solid #5A3D7A;
 
-    font-weight:600;
-
-    border:1px solid rgba(90,61,138,.4);
-
-    transition:.25s;
+    transition: .25s ease;
 
 }
 
@@ -279,12 +227,9 @@ section {
 
 .buttons a:hover {
 
-    border-color:#5a3d8a;
-
-    transform:translateY(-2px);
+    background: var(--purple-light);
 
 }
-
 
 
 
@@ -292,11 +237,11 @@ section {
 
 .stats {
 
-    display:grid;
+    display: grid;
 
-    grid-template-columns:repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
 
-    gap:20px;
+    gap: 20px;
 
 }
 
@@ -304,15 +249,15 @@ section {
 
 .stats div {
 
-    background:#090d18;
+    background: var(--card);
 
-    border:1px solid var(--border);
+    border: 1px solid var(--border);
 
-    border-radius:12px;
+    border-radius: 12px;
 
-    padding:25px;
+    padding: 25px;
 
-    transition:.25s;
+    transition: .25s ease;
 
 }
 
@@ -320,7 +265,7 @@ section {
 
 .stats div:hover {
 
-    border-color:#3b2468;
+    border-color: var(--purple);
 
 }
 
@@ -328,11 +273,11 @@ section {
 
 .stats strong {
 
-    display:block;
+    display: block;
 
-    font-size:36px;
+    font-size: 36px;
 
-    color:#b7b3ca;
+    color: #B9B1CC;
 
 }
 
@@ -340,23 +285,21 @@ section {
 
 .stats span {
 
-    color:#777b95;
+    color: var(--muted);
 
 }
 
 
 
-
-
-/* SECTION TITLES */
+/* SECTION HEADINGS */
 
 section h2 {
 
-    font-size:32px;
+    font-size: 32px;
 
-    color:#bcb9d0;
+    color: #BDB5CF;
 
-    margin-bottom:25px;
+    margin-bottom: 25px;
 
 }
 
@@ -364,23 +307,18 @@ section h2 {
 
 section h2::after {
 
-    content:"";
+    content: "";
 
-    display:block;
+    display: block;
 
-    width:45px;
+    width: 45px;
 
-    height:3px;
+    height: 3px;
 
-    margin-top:10px;
+    margin-top: 10px;
 
-    background:
 
-    linear-gradient(
-        90deg,
-        #3b2468,
-        #1b2a52
-    );
+    background: var(--purple);
 
 }
 
@@ -391,17 +329,17 @@ section h2::after {
 
 .card {
 
-    background:#090d18;
+    background: var(--card);
 
-    border:1px solid var(--border);
+    border: 1px solid var(--border);
 
-    border-radius:12px;
+    border-radius: 12px;
 
-    padding:30px;
+    padding: 30px;
 
-    margin-bottom:25px;
+    margin-bottom: 25px;
 
-    transition:.25s;
+    transition: .25s ease;
 
 }
 
@@ -409,7 +347,7 @@ section h2::after {
 
 .card:hover {
 
-    border-color:#3b2468;
+    border-color: var(--purple);
 
 }
 
@@ -417,9 +355,9 @@ section h2::after {
 
 .card h3 {
 
-    font-size:24px;
+    font-size: 24px;
 
-    color:#c9c7d8;
+    color: #D0CADF;
 
 }
 
@@ -427,9 +365,9 @@ section h2::after {
 
 .card h4 {
 
-    color:#777b95;
+    color: #817A94;
 
-    margin:5px 0 15px;
+    margin: 5px 0 15px;
 
 }
 
@@ -437,7 +375,17 @@ section h2::after {
 
 .card p {
 
-    color:#999bb5;
+    color: #AAA4BA;
+
+}
+
+
+
+.card ul {
+
+    margin-top: 20px;
+
+    padding-left: 20px;
 
 }
 
@@ -445,25 +393,23 @@ section h2::after {
 
 .card li {
 
-    color:#a8a9bd;
+    color: #B7B0C4;
 
-    margin-bottom:10px;
+    margin-bottom: 10px;
 
 }
 
 
 
-
-
-/* GAME CARDS */
+/* GAME TITLES */
 
 .game-grid {
 
-    display:grid;
+    display: grid;
 
-    grid-template-columns:repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
 
-    gap:20px;
+    gap: 20px;
 
 }
 
@@ -471,15 +417,15 @@ section h2::after {
 
 .game-card {
 
-    background:#090d18;
+    background: var(--card);
 
-    border:1px solid var(--border);
+    border: 1px solid var(--border);
 
-    border-radius:12px;
+    border-radius: 12px;
 
-    overflow:hidden;
+    overflow: hidden;
 
-    transition:.25s;
+    transition: .25s ease;
 
 }
 
@@ -487,9 +433,9 @@ section h2::after {
 
 .game-card:hover {
 
-    border-color:#3b2468;
+    border-color: var(--purple);
 
-    transform:translateY(-3px);
+    transform: translateY(-3px);
 
 }
 
@@ -497,11 +443,11 @@ section h2::after {
 
 .game-card img {
 
-    width:100%;
+    width: 100%;
 
-    height:180px;
+    height: 180px;
 
-    object-fit:cover;
+    object-fit: cover;
 
 }
 
@@ -509,7 +455,7 @@ section h2::after {
 
 .game-card div {
 
-    padding:20px;
+    padding: 20px;
 
 }
 
@@ -517,7 +463,7 @@ section h2::after {
 
 .game-card h3 {
 
-    color:#c9c7d8;
+    color: #D0CADF;
 
 }
 
@@ -525,12 +471,11 @@ section h2::after {
 
 .game-card p {
 
-    color:#777b95;
+    color: var(--muted);
 
-    font-size:14px;
+    font-size: 14px;
 
 }
-
 
 
 
@@ -539,11 +484,11 @@ section h2::after {
 
 .skills {
 
-    display:flex;
+    display: flex;
 
-    flex-wrap:wrap;
+    flex-wrap: wrap;
 
-    gap:10px;
+    gap: 10px;
 
 }
 
@@ -551,25 +496,17 @@ section h2::after {
 
 .skills span {
 
-    background:
+    background: #120D1E;
 
-    rgba(59,36,104,.25);
+    border: 1px solid #35244B;
 
+    color: #AFA7C2;
 
-    border:
+    border-radius: 20px;
 
-    1px solid rgba(90,61,138,.35);
-
-
-    color:#aaa6c5;
-
-
-    border-radius:20px;
-
-    padding:8px 15px;
+    padding: 8px 15px;
 
 }
-
 
 
 
@@ -577,24 +514,24 @@ section h2::after {
 
 #contact {
 
-    text-align:center;
+    text-align: center;
 
 }
+
 
 
 #contact a {
 
-    color:#5a3d8a;
+    color: var(--purple-light);
 
-    font-weight:600;
+    font-weight: 600;
 
 }
 
 
-
 #contact a:hover {
 
-    color:#8b6fb5;
+    color: #B8A7D2;
 
 }
 
@@ -605,33 +542,32 @@ section h2::after {
 
 @media(max-width:800px) {
 
-
     nav {
 
-        flex-direction:column;
+        flex-direction: column;
 
-        gap:15px;
+        gap: 15px;
 
     }
 
 
     .hero h1 {
 
-        font-size:42px;
+        font-size: 42px;
 
     }
 
 
     .stats {
 
-        grid-template-columns:1fr;
+        grid-template-columns: 1fr;
 
     }
 
 
     .game-grid {
 
-        grid-template-columns:1fr;
+        grid-template-columns: 1fr;
 
     }
 
