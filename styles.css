@@ -35,14 +35,17 @@ body {
 }
 
 /* =========================
-   BACKGROUND AMBIENT BLUR
+   FULL BACKGROUND BLUR
 ========================= */
 
 body {
     position:relative;
     overflow-x:hidden;
+    background:#020103;
 }
 
+
+/* Blurred background layer */
 
 body::before {
 
@@ -50,28 +53,28 @@ body::before {
 
     position:fixed;
 
-    top:-200px;
-
-    left:50%;
-
-    transform:translateX(-50%);
-
-    width:900px;
-
-    height:500px;
+    inset:-100px;
 
     background:
 
     radial-gradient(
-        circle,
+        circle at 20% 20%,
         rgba(75,50,104,.18),
-        transparent 65%
-    );
+        transparent 35%
+    ),
+
+    radial-gradient(
+        circle at 80% 70%,
+        rgba(36,54,83,.15),
+        transparent 40%
+    ),
+
+    #020103;
 
 
-    filter:blur(80px);
+    filter:blur(60px);
 
-    z-index:-1;
+    z-index:-2;
 
     pointer-events:none;
 
