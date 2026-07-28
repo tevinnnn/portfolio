@@ -111,33 +111,18 @@ a {
 
 
 
-/* =========================
-   PHOENIX LOGO
-========================= */
-
 .logo {
-
     display:flex;
-
     align-items:center;
-
     justify-content:center;
-
     width:60px;
-
     height:60px;
-
 }
 
-
 .logo svg {
-
-    width:58px;
-
-    height:58px;
-
+    width:52px;
+    height:52px;
     display:block;
-
 }
 
 /* =========================
