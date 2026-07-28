@@ -263,9 +263,6 @@ section h2 {
 }
 
 
-
-
-
 /* =========================
    SOCIAL LINKS
 ========================= */
@@ -276,7 +273,13 @@ section h2 {
 
     display:flex;
 
+    align-items:center;
+
+    justify-content:flex-start;
+
     gap:14px;
+
+    width:650px;
 
 }
 
@@ -289,9 +292,9 @@ section h2 {
 
     justify-content:center;
 
-    width:48px;
+    width:42px;
 
-    height:48px;
+    height:42px;
 
     border-radius:10px;
 
@@ -309,9 +312,9 @@ section h2 {
 .social-links svg,
 .social-links img {
 
-    width:26px !important;
+    width:22px;
 
-    height:26px !important;
+    height:22px;
 
     display:block;
 
