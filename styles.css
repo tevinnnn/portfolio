@@ -112,22 +112,10 @@ a {
 
 
 /* =========================
-   TS LOGO
+   PHOENIX LOGO
 ========================= */
 
 .logo {
-
-    font-family:"Orbitron", sans-serif;
-
-    font-size:38px;
-
-    font-weight:700;
-
-    letter-spacing:-0.12em;
-
-    line-height:1;
-
-    color:#FFFFFF;
 
     display:flex;
 
@@ -135,8 +123,24 @@ a {
 
     justify-content:center;
 
-    text-shadow:
-        0 0 12px rgba(91,58,130,.25);
+    width:48px;
+
+    height:48px;
+
+}
+
+
+.logo img {
+
+    width:42px;
+
+    height:42px;
+
+    object-fit:contain;
+
+    filter:
+        brightness(0)
+        invert(1);
 
     transition:none;
 
