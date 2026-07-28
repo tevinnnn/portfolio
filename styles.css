@@ -92,6 +92,10 @@ nav {
 
     letter-spacing: -0.08em;
 
+    line-height: 1.15;
+
+    padding: 8px 6px;
+
 
     background: linear-gradient(
         135deg,
@@ -101,7 +105,9 @@ nav {
 
 
     -webkit-background-clip: text;
+
     -webkit-text-fill-color: transparent;
+
 }
 
 
