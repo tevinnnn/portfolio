@@ -226,7 +226,7 @@ section h2 {
 
 
 /* =========================
-   HERO
+   HERO ALIGNMENT
 ========================= */
 
 .hero {
@@ -252,6 +252,8 @@ section h2 {
 
     font-size:64px;
 
+    text-align:left;
+
 }
 
 
@@ -260,6 +262,8 @@ section h2 {
     font-size:22px;
 
     font-weight:500;
+
+    text-align:left;
 
 }
 
@@ -303,9 +307,9 @@ section h2 {
 
     justify-content:center;
 
-    width:42px;
+    width:44px;
 
-    height:42px;
+    height:44px;
 
     border-radius:10px;
 
@@ -320,12 +324,11 @@ section h2 {
 }
 
 
-.social-links svg,
-.social-links img {
+.social-links svg {
 
-    width:22px;
+    width:24px;
 
-    height:22px;
+    height:24px;
 
     display:block;
 
@@ -341,7 +344,6 @@ section h2 {
     transform:translateY(-2px);
 
 }
-
 
 /* =========================
    STATS
