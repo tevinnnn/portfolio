@@ -119,10 +119,11 @@ a {
     height:60px;
 }
 
-.logo svg {
+.logo img {
     width:52px;
     height:52px;
     display:block;
+    object-fit:contain;
 }
 
 /* =========================
