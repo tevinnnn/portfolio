@@ -61,7 +61,6 @@ header {
 nav {
     max-width: 1100px;
     margin: auto;
-
     padding: 20px 30px;
 
     display: flex;
@@ -70,46 +69,31 @@ nav {
 }
 
 
-
 .logo {
     font-family: 'Space Grotesk', sans-serif;
-
     font-size: 28px;
-
     font-weight: 800;
-
     letter-spacing: -0.06em;
 
-
-    background:
-        linear-gradient(
-            135deg,
-            var(--purple-light),
-            var(--blue)
-        );
-
+    background: linear-gradient(
+        135deg,
+        var(--purple-light),
+        var(--blue)
+    );
 
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
 
-
 nav a {
-
     margin-left: 20px;
-
     color: var(--muted);
-
-    transition: .2s ease;
-
 }
 
 
 nav a:hover {
-
     color: #B8A7D2;
-
 }
 
 
@@ -117,20 +101,14 @@ nav a:hover {
 /* MAIN */
 
 main {
-
     max-width: 1100px;
-
     margin: auto;
-
     padding: 0 30px;
-
 }
 
 
 section {
-
     margin: 60px 0;
-
 }
 
 
@@ -138,97 +116,66 @@ section {
 /* HERO */
 
 .hero {
-
     padding-top: 70px;
-
 }
-
 
 
 .hero h1 {
-
     font-size: 64px;
-
     line-height: 1.1;
-
     margin-bottom: 15px;
 
+    background: linear-gradient(
+        90deg,
+        #D6D1E2,
+        var(--purple-light)
+    );
 
-    color: #D6D1E2;
-
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
-
 
 
 .hero h2 {
-
     font-family: 'Inter', sans-serif;
-
     font-size: 22px;
-
     font-weight: 500;
-
     color: #7F7892;
-
     margin-bottom: 20px;
-
 }
-
 
 
 .hero p {
-
     max-width: 650px;
-
     color: #AAA4BA;
-
     font-size: 18px;
-
 }
-
 
 
 
 /* BUTTONS */
 
 .buttons {
-
     display: flex;
-
     gap: 15px;
-
     margin-top: 30px;
-
     flex-wrap: wrap;
-
 }
-
 
 
 .buttons a {
-
-    background: var(--purple);
+    background: linear-gradient(
+        135deg,
+        var(--purple),
+        var(--blue)
+    );
 
     color: #DDD6EA;
-
     padding: 10px 20px;
-
     border-radius: 8px;
 
     font-weight: 600;
-
     border: 1px solid #5A3D7A;
-
-    transition: .25s ease;
-
-}
-
-
-
-.buttons a:hover {
-
-    background: var(--purple-light);
-
 }
 
 
@@ -236,15 +183,10 @@ section {
 /* STATS */
 
 .stats {
-
     display: grid;
-
     grid-template-columns: repeat(3, 1fr);
-
     gap: 20px;
-
 }
-
 
 
 .stats div {
@@ -256,53 +198,29 @@ section {
     border-radius: 12px;
 
     padding: 25px;
-
-    transition: .25s ease;
-
 }
-
-
-
-.stats div:hover {
-
-    border-color: var(--purple);
-
-}
-
 
 
 .stats strong {
-
     display: block;
-
     font-size: 36px;
-
     color: #B9B1CC;
-
 }
-
 
 
 .stats span {
-
     color: var(--muted);
-
 }
 
 
 
-/* SECTION HEADINGS */
+/* HEADINGS */
 
 section h2 {
-
     font-size: 32px;
-
     color: #BDB5CF;
-
     margin-bottom: 25px;
-
 }
-
 
 
 section h2::after {
@@ -317,17 +235,16 @@ section h2::after {
 
     margin-top: 10px;
 
-
     background: var(--purple);
 
 }
 
 
 
+/* CARDS */
 
-/* EXPERIENCE CARDS */
-
-.card {
+.card,
+.game-card {
 
     background: var(--card);
 
@@ -335,42 +252,31 @@ section h2::after {
 
     border-radius: 12px;
 
+}
+
+
+.card {
+
     padding: 30px;
 
     margin-bottom: 25px;
 
-    transition: .25s ease;
-
 }
 
 
-
-.card:hover {
-
-    border-color: var(--purple);
-
-}
-
-
-
-.card h3 {
-
-    font-size: 24px;
+.card h3,
+.game-card h3 {
 
     color: #D0CADF;
 
 }
 
 
-
 .card h4 {
 
     color: #817A94;
 
-    margin: 5px 0 15px;
-
 }
-
 
 
 .card p {
@@ -378,17 +284,6 @@ section h2::after {
     color: #AAA4BA;
 
 }
-
-
-
-.card ul {
-
-    margin-top: 20px;
-
-    padding-left: 20px;
-
-}
-
 
 
 .card li {
@@ -401,7 +296,7 @@ section h2::after {
 
 
 
-/* GAME TITLES */
+/* GAME GRID */
 
 .game-grid {
 
@@ -414,31 +309,11 @@ section h2::after {
 }
 
 
-
 .game-card {
-
-    background: var(--card);
-
-    border: 1px solid var(--border);
-
-    border-radius: 12px;
 
     overflow: hidden;
 
-    transition: .25s ease;
-
 }
-
-
-
-.game-card:hover {
-
-    border-color: var(--purple);
-
-    transform: translateY(-3px);
-
-}
-
 
 
 .game-card img {
@@ -452,21 +327,11 @@ section h2::after {
 }
 
 
-
 .game-card div {
 
     padding: 20px;
 
 }
-
-
-
-.game-card h3 {
-
-    color: #D0CADF;
-
-}
-
 
 
 .game-card p {
@@ -476,7 +341,6 @@ section h2::after {
     font-size: 14px;
 
 }
-
 
 
 
@@ -491,7 +355,6 @@ section h2::after {
     gap: 10px;
 
 }
-
 
 
 .skills span {
@@ -519,22 +382,11 @@ section h2::after {
 }
 
 
-
 #contact a {
 
     color: var(--purple-light);
 
-    font-weight: 600;
-
 }
-
-
-#contact a:hover {
-
-    color: #B8A7D2;
-
-}
-
 
 
 
@@ -543,32 +395,23 @@ section h2::after {
 @media(max-width:800px) {
 
     nav {
-
         flex-direction: column;
-
         gap: 15px;
-
     }
 
 
     .hero h1 {
-
         font-size: 42px;
-
     }
 
 
     .stats {
-
         grid-template-columns: 1fr;
-
     }
 
 
     .game-grid {
-
         grid-template-columns: 1fr;
-
     }
 
 }
