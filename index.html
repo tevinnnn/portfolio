@@ -1,407 +1,652 @@
-<!DOCTYPE html>
-<html lang="en">
+:root {
+    --bg: #020203;
+    --card: #08080B;
+    --border: #17131D;
 
-<head>
+    --white: #FFFFFF;
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    --purple: #4B3268;
+    --purple-light: #5B3A82;
+    --blue: #243653;
+}
 
-<title>Tevin Sukhai | Community Manager</title>
 
-<meta name="description" content="Tevin Sukhai - Community Manager specializing in leadership, operations, communication, and community engagement.">
+/* RESET */
 
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
 
-<link rel="stylesheet" href="styles.css">
 
-</head>
+html {
+    scroll-behavior:smooth;
+}
 
 
-<body>
+body {
+    font-family:'Inter', sans-serif;
+    background:var(--bg);
+    color:white;
+    line-height:1.6;
+}
 
 
-<header>
+h1,
+h2,
+h3 {
 
-<nav>
+    font-family:'Space Grotesk', sans-serif;
 
-<div class="logo">TS</div>
+    color:white;
 
-<div>
-<a href="#credits">Credits</a>
-<a href="#experience">Experience</a>
-<a href="#skills">Skills</a>
-<a href="#contact">Contact</a>
-</div>
+    letter-spacing:-0.03em;
 
-</nav>
+}
 
-</header>
 
+h4 {
 
+    font-family:'Inter', sans-serif;
 
-<main>
+    color:white;
 
+}
 
 
-<section class="hero">
+p,
+li {
 
-<h1>Tevin Sukhai</h1>
+    color:white;
 
-<h2>
-Community Manager | Operations | Leadership
-</h2>
+}
 
-<p>
-Building stronger teams, improving experiences, and creating meaningful connections through leadership and collaboration.
-</p>
 
+a {
 
-<div class="buttons">
+    color:white;
 
-<a href="resume.pdf">View Resume</a>
+    text-decoration:none;
 
-<a href="https://www.linkedin.com/in/tevinsukhai" target="_blank">
-LinkedIn
-</a>
+}
 
-<a href="mailto:hi@tevinn.com">
-Contact Me
-</a>
 
-</div>
 
-</section>
 
 
+/* HEADER */
 
+header {
 
+    background:#020203;
 
-<section class="stats">
+    border-bottom:1px solid var(--border);
 
-<div>
-<strong>477K+</strong>
-<span>Community Members Supported</span>
-</div>
+}
 
 
-<div>
-<strong>40+</strong>
-<span>Team Members Led</span>
-</div>
+nav {
 
+    max-width:1100px;
 
-<div>
-<strong>1B+</strong>
-<span>Community Visits Supported</span>
-</div>
+    margin:auto;
 
+    padding:22px 30px;
 
-</section>
+    display:flex;
 
+    justify-content:space-between;
 
+    align-items:center;
 
+}
 
 
-<section id="credits">
+.logo {
 
-<h2>Credited In</h2>
+    font-family:'Space Grotesk', sans-serif;
 
+    font-size:32px;
 
-<div class="game-grid">
+    font-weight:800;
 
+    letter-spacing:-0.08em;
 
-<div class="game-card">
-<img src="assets/games/HL.jpg" alt="Hogwarts Legacy">
+    line-height:1;
 
-<div>
-<h3>Hogwarts Legacy</h3>
-<p>
-Community Operations · Player Experience · QA Support
-</p>
-</div>
+    padding:6px;
 
-</div>
 
+    background:
 
+    linear-gradient(
+        135deg,
+        var(--purple-light),
+        var(--blue)
+    );
 
-<div class="game-card">
-<img src="assets/games/MK1.jpg" alt="Mortal Kombat 1">
 
-<div>
-<h3>Mortal Kombat 1</h3>
-<p>
-Community Operations · Player Feedback · Engagement
-</p>
-</div>
+    -webkit-background-clip:text;
 
-</div>
+    -webkit-text-fill-color:transparent;
 
+}
 
 
-<div class="game-card">
-<img src="assets/games/MVS.jpg" alt="MultiVersus">
 
-<div>
-<h3>MultiVersus</h3>
-<p>
-Community Operations · Player Experience
-</p>
-</div>
 
-</div>
 
+/* NAV */
 
+nav div:last-child {
 
-<div class="game-card">
-<img src="assets/games/HPQC.jpg" alt="Harry Potter Quidditch Champions">
+    display:flex;
 
-<div>
-<h3>Harry Potter: Quidditch Champions</h3>
-<p>
-Community & Social Operations
-</p>
-</div>
+    align-items:center;
 
-</div>
+    gap:12px;
 
+}
 
 
-<div class="game-card">
-<img src="assets/games/SS.jpg" alt="Suicide Squad Kill The Justice League">
+nav a {
 
-<div>
-<h3>Suicide Squad: Kill The Justice League</h3>
-<p>
-Community Operations · Engagement Support
-</p>
-</div>
+    color:white;
 
-</div>
+    padding:8px 14px;
 
+    border-radius:8px;
 
+    font-size:15px;
 
-<div class="game-card">
-<img src="assets/games/DCWC.jpg" alt="DC Worlds Collide">
+    font-weight:600;
 
-<div>
-<h3>DC Worlds Collide</h3>
-<p>
-Community Operations · Ambassador Program Support
-</p>
-</div>
+    white-space:nowrap;
 
-</div>
+    transition:.25s ease;
 
+}
 
-</div>
 
-</section>
+nav a:hover {
 
+    background:#0D0914;
 
+    color:#A98AD0;
 
+}
 
 
-<section>
 
-<h2>About Me</h2>
 
-<p>
 
-Howdy! I’m Tevin. I’m a community-focused leader who enjoys bringing people together, building strong teams, and creating environments where people feel valued.
+/* MAIN */
 
-Throughout my career, I’ve worked across gaming, digital communities, and team operations — helping organizations improve communication, develop processes, and create better experiences for the people they serve.
+main {
 
-I’m passionate about leadership, collaboration, and finding new ways to make an impact.
+    max-width:1100px;
 
-</p>
+    margin:auto;
 
-</section>
+    padding:0 30px;
 
+}
 
 
+section {
 
+    margin:60px 0;
 
-<section id="experience">
+}
 
 
-<h2>Professional Experience</h2>
+section h2 {
 
+    margin-bottom:30px;
 
+}
 
-<div class="card">
 
 
-<h3>Warner Bros. Discovery</h3>
 
-<h4>
-Associate Manager, Community @ WB Games (PC & Console)
-</h4>
 
-<p>
-Mar 2023 — Nov 2025 · Remote
-</p>
+/* HERO */
 
+.hero {
 
-<p>
-Supported community and social functions across multiple Warner Bros. Games titles.
-</p>
+    padding-top:70px;
 
+}
 
-<ul>
 
-<li>Led a 40+ member moderation and safety team across communities totaling 477,000+ members.</li>
+.hero h1 {
 
-<li>Managed community operations, player feedback, sentiment analysis, and escalation handling.</li>
+    font-size:64px;
 
-<li>Developed workflows and processes to improve moderation and communication operations.</li>
+}
 
-<li>Supported QA initiatives and player experience improvements across AAA titles.</li>
 
-<li>Trained creators, moderators, and community staff on guidelines and best practices.</li>
+.hero h2 {
 
-<li>Supported ambassador programs and community engagement initiatives.</li>
+    font-size:22px;
 
-</ul>
+    font-weight:500;
 
+}
 
-</div>
 
+.hero p {
 
+    max-width:650px;
 
+    margin-top:20px;
 
+    display:block;
 
-<div class="card">
+}
 
 
-<h3>Starstream Studios</h3>
 
-<h4>
-Chief Marketing Officer
-</h4>
+/* Remove hover animation from hero text */
 
+.hero p::after {
 
-<p>
-Jul 2021 — Sep 2023 · Contract · Remote
-</p>
+    display:none;
 
+}
 
-<ul>
 
-<li>Led project operations for Space Industry Simulator, overseeing development, QA, and team coordination.</li>
 
-<li>Managed recruitment efforts, freelancer coordination, and team growth.</li>
 
-<li>Developed marketing and engagement strategies to increase visibility.</li>
 
-<li>Managed social platforms and community communication.</li>
+/* BUTTONS */
 
-<li>Supported budgeting and operational planning.</li>
+.buttons {
 
-</ul>
+    display:flex;
 
+    gap:15px;
 
-</div>
+    margin-top:30px;
 
+}
 
 
+.buttons a {
 
+    background:
 
-<div class="card">
+    linear-gradient(
+        135deg,
+        var(--purple),
+        var(--blue)
+    );
 
 
-<h3>Infinite Canvas</h3>
+    color:white;
 
-<h4>
-Community Lead
-</h4>
+    padding:10px 22px;
 
+    border-radius:8px;
 
-<p>
-Aug 2021 — Sep 2022 · Remote
-</p>
+    font-weight:600;
 
+    transition:.25s ease;
 
-<ul>
+}
 
-<li>Managed community operations across multiple game projects.</li>
 
-<li>Led moderators, administrators, and community staff teams.</li>
+.buttons a:hover {
 
-<li>Created engagement strategies supporting communities with 30,000+ members and 1B+ visits.</li>
+    transform:translateY(-2px);
 
-<li>Built QA processes and feedback systems to improve releases.</li>
+}
 
-<li>Worked with production teams to align community needs with development goals.</li>
 
-</ul>
 
 
-</div>
 
+/* STATS */
 
-</section>
+.stats {
 
+    display:grid;
 
+    grid-template-columns:repeat(3,1fr);
 
+    gap:20px;
 
+}
 
-<section id="skills">
 
-<h2>Skills</h2>
+.stats div {
 
+    background:var(--card);
 
-<div class="skills">
+    border:1px solid var(--border);
 
-<span>Team Leadership</span>
-<span>People Management</span>
-<span>Community Engagement</span>
-<span>Stakeholder Relations</span>
-<span>Project Management</span>
-<span>Program Management</span>
-<span>Operations Management</span>
-<span>Process Improvement</span>
-<span>Crisis Management</span>
-<span>Conflict Resolution</span>
-<span>Strategic Planning</span>
-<span>Training & Development</span>
-<span>Recruitment & Hiring</span>
-<span>Policy Development</span>
-<span>Quality Assurance</span>
-<span>Public Relations</span>
-<span>Written Communication</span>
-<span>Public Speaking</span>
+    border-radius:14px;
 
-</div>
+    padding:25px;
 
-</section>
+    position:relative;
 
+    overflow:hidden;
 
+}
 
 
+.stats strong {
 
-<section id="contact">
+    display:block;
 
+    font-family:'Space Grotesk';
 
-<h2>Let's Connect</h2>
+    font-size:38px;
 
+}
 
-<p>
-Open to opportunities focused on leadership, operations, community, and building meaningful experiences.
-</p>
 
+.stats span {
 
-<a href="mailto:hi@tevinn.com">
-hi@tevinn.com
-</a>
+    display:block;
 
+    color:white;
 
-</section>
+}
 
 
 
-</main>
 
 
-</body>
+/* TEXT HOVER EFFECT */
 
-</html>
+.card p,
+.card li,
+.game-card p,
+.skills span,
+.stats span {
+
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+
+
+.card p::after,
+.card li::after,
+.game-card p::after,
+.skills span::after,
+.stats span::after {
+
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+
+    left:-120%;
+
+    width:70%;
+
+    height:100%;
+
+
+    background:
+
+    linear-gradient(
+        120deg,
+        transparent,
+        rgba(255,255,255,.12),
+        transparent
+    );
+
+
+    transition:left .75s ease;
+
+}
+
+
+
+.card p:hover::after,
+.card li:hover::after,
+.game-card p:hover::after,
+.skills span:hover::after,
+.stats span:hover::after {
+
+    left:130%;
+
+}
+
+
+
+
+
+/* EXPERIENCE */
+
+.card {
+
+    background:var(--card);
+
+    border:1px solid var(--border);
+
+    border-radius:14px;
+
+    padding:30px;
+
+    margin-bottom:25px;
+
+}
+
+
+.card h3 {
+
+    font-size:26px;
+
+    margin-bottom:6px;
+
+    line-height:1.2;
+
+}
+
+
+.card h4 {
+
+    font-size:18px;
+
+    font-weight:600;
+
+    margin-bottom:8px;
+
+    line-height:1.4;
+
+}
+
+
+.card p {
+
+    display:block;
+
+    width:100%;
+
+    text-align:left;
+
+}
+
+
+.card ul {
+
+    width:100%;
+
+    padding-left:22px;
+
+    margin-top:15px;
+
+}
+
+
+.card li {
+
+    display:list-item;
+
+    margin-bottom:12px;
+
+    line-height:1.6;
+
+}
+
+
+
+
+
+/* GAME CARDS */
+
+.game-grid {
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:20px;
+
+}
+
+
+.game-card {
+
+    background:var(--card);
+
+    border:1px solid var(--border);
+
+    border-radius:14px;
+
+    overflow:hidden;
+
+}
+
+
+.game-card img {
+
+    width:100%;
+
+    height:180px;
+
+    object-fit:cover;
+
+}
+
+
+.game-card div {
+
+    padding:20px;
+
+}
+
+
+.game-card p {
+
+    display:block;
+
+    width:100%;
+
+}
+
+
+
+
+
+/* SKILLS */
+
+.skills {
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:10px;
+
+}
+
+
+.skills span {
+
+    background:#09070D;
+
+    border:1px solid #241833;
+
+    border-radius:20px;
+
+    padding:8px 15px;
+
+}
+
+
+
+
+
+/* CONTACT */
+
+#contact {
+
+    text-align:center;
+
+}
+
+
+#contact p {
+
+    text-align:center;
+
+    margin-bottom:15px;
+
+}
+
+
+#contact a {
+
+    display:inline-block;
+
+    text-align:center;
+
+    font-weight:600;
+
+}
+
+
+
+
+
+/* MOBILE */
+
+@media(max-width:800px){
+
+
+    nav {
+
+        flex-direction:column;
+
+        gap:15px;
+
+    }
+
+
+    .hero h1 {
+
+        font-size:42px;
+
+    }
+
+
+    .stats,
+    .game-grid {
+
+        grid-template-columns:1fr;
+
+    }
+
+}
