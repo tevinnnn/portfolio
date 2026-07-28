@@ -83,30 +83,83 @@ nav {
 
 
 .logo {
+    position: relative;
 
     font-family: "Space Grotesk", sans-serif;
 
-    font-size: 34px;
+    font-size: 38px;
 
     font-weight: 800;
 
-    letter-spacing: -0.08em;
+    letter-spacing: -0.12em;
 
-    line-height: 1.15;
+    line-height: 1;
 
-    padding: 8px 6px;
+    padding: 10px 14px;
 
+    color: white;
 
-    background: linear-gradient(
-        135deg,
-        var(--purple-light),
-        var(--blue)
-    );
-
+    background:
+        linear-gradient(
+            135deg,
+            #6d4aa5,
+            #243653
+        );
 
     -webkit-background-clip: text;
-
     -webkit-text-fill-color: transparent;
+
+
+    filter:
+        drop-shadow(0 0 8px rgba(75,50,104,.35));
+
+    transition: .35s ease;
+}
+
+
+/* TS emblem border */
+
+.logo::before {
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    border:1px solid rgba(91,58,130,.35);
+
+    border-radius:10px;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(91,58,130,.15),
+            rgba(36,54,83,.05)
+        );
+
+    z-index:-1;
+
+    transition:.35s ease;
+
+}
+
+
+/* Hover */
+
+.logo:hover {
+
+    filter:
+        drop-shadow(0 0 18px rgba(91,58,130,.75));
+
+    transform:translateY(-2px);
+
+}
+
+
+.logo:hover::before {
+
+    border-color:rgba(91,58,130,.8);
 
 }
 
